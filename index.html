@@ -36,10 +36,7 @@
     <meta name="author" content="Peter Min">
     <script src="./resume_files/angular-942f78600a22d8437e93d3707d071cb8.js.download"></script>
     <script src="./resume_files/app-0f2b0d904ea02db5d9a0de00f9277daf.js.download"></script>
-    <link href="./resume_files/share-a168fc1bb8126cd849151fd37c143633.css" media="all" rel="stylesheet">
-    <script src="./resume_files/share-ac8682e4c1bd105010f526375b62a481.js.download"></script>
-    <script type="text/javascript" src="./resume_files/pui2bxe.js.download"></script>
-    <style type="text/css">
+   <style type="text/css">
         .tk-proxima-nova {
             font-family: "proxima-nova", sans-serif;
         }
@@ -130,16 +127,6 @@
         try {
             Typekit.load();
         } catch (e) {}
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('html').click(function() {
-                if (window.parent.$(".view-pdf").hasClass("active")) {
-                    window.parent.$(".view-pdf").removeClass("active");
-                }
-            });
-        });
     </script>
 
     <!--[if lt IE 9]>
@@ -278,6 +265,19 @@
         #resume #main .list ul li h3.time, #resume #main .list ul li h3.location {
             color: rgba(0,0,0,0.9) !important;
         }
+
+        #side {
+            width: 30%;
+            height: 2085px;
+            float: left;
+            text-align: left;
+            position: absolute;
+            left: 0;
+        }
+
+        .list {
+            max-width: 500px;
+        }
     </style>
     <!-- END THEME -->
 
@@ -350,25 +350,9 @@
                 <p id="about">Deep experience and proven record in designing, developing &amp; leading highly scalable, reliable and complex projects with excellent quality.</p>
 
                 <ul class="subContact">
-                    <li><a href="mailto:min@love.com"><span class="pdf-hide">min@love.com</span><span class="pdf-show">min@love.com</span></a> </li>
                     <li class="phone_number">(650) 530-0877</li>
-
-                    <script>
-                        $(function() {
-                            $('.more-info').click(function() {
-                                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                                    var target = $(this.hash);
-                                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                                    if (target.length) {
-                                        $('html,body').animate({
-                                            scrollTop: target.offset().top
-                                        }, 1000);
-                                        return false;
-                                    }
-                                }
-                            });
-                        });
-                    </script>
+                    <li><a href="mailto:min@love.com"><span class="pdf-hide">min@love.com</span><span class="pdf-show">min@love.com</span></a> </li>
+                    <li class="phone_number">237 Kearny St<br>San Francisco, CA 94108</li>
                 </ul>
             </div>
         </div>
@@ -407,8 +391,8 @@
                             <h3 class="time">Stanford, CA</h3>
                             <h3 class="time">Feb 2017 - Present</h3>
                             <div class="description">
-                                <p>* Developed and launched the AI/ML scientific community website. The Science Wiki is the world's largest and broadest repository of AI/ML knowledge.</p>
-                                <p>* Built and deployed the data labeling UI, and several text classification and clustering machine learning algorithms. Implemented the systems using Ruby, Python, Java, Scala, redis, MySQL, and AWS/GCP.</p>
+                                <p>* Developed and launched the AI/ML scientific community website. The Science Wiki is one of the world's largest and broadest repositories of AI/ML knowledge.</p>
+                                <p>* Built and deployed several text classification and clustering machine learning algorithms. Implemented the systems using Ruby, Python, Java, Scala, redis, MySQL, and AWS/GCP.</p>
                             </div>
                         </li>
                         <li class="experience">
@@ -443,9 +427,7 @@
                     </ul>
                 </div>
 
-                <div id="education" class="list" style="
-    margin-top: 250px;
-">
+                <div id="education" class="list">
                     <svg class="education-icon color" viewBox="0 0 17 17">
                         <use xlink:href="#education-icon"></use>
                     </svg>
@@ -475,23 +457,6 @@
                         <li class="skill">Python</li>
                         <li class="skill">Machine Learning</li>
                     </ul>
-                </div>
-
-                <div id="contact" class="list" style="
-    margin-bottom: 650px;
-">
-
-                    <svg class="contact-icon color" viewBox="0 0 16 17">
-                        <use xlink:href="#contact-icon"></use>
-                    </svg>
-                    <h2 class="resumeSection color">Contact</h2>
-
-                    <ul class="contact">
-                        <li><a class="color" href="mailto:min@love.com"><span class="pdf-hide">Email Peter</span><span class="pdf-show">min@love.com</span></a></li>
-                        <li>(650) 530-0877</li>
-                        <li>237 Kearny St, San Francisco, CA 94108</li>
-                    </ul>
-
                 </div>
 
                 <div class="clearfix"></div>
